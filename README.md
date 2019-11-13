@@ -1,5 +1,5 @@
 # electron-python
-Invoke python scripts using electron. **This is an example on how to invoke python scripts using electron application.
+Invoke python scripts using electron. **This is an example on how to invoke python scripts using electron application.**
 
 <div align="center">
 <br>
