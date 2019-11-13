@@ -1,0 +1,118 @@
+.meta-view {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 22vh;
+  background: #edf2f7;
+  padding: 10px;
+  z-index: 400;
+}
+
+.meta-view table {
+  margin: 10px 0;
+}
+
+.meta-view th, .meta-view td {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.meta-view table th {
+  text-align: left;
+}
+
+.app-view {
+  position: fixed;
+  top: 25vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background: #fff;
+  z-index: 500;
+}
+
+.app-view > .script-selector-view {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+}
+
+.app-view > .script-selector-view > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-view > .script-selector-view > ul > li {
+  padding: 5px 0;
+  margin: 10px 0;
+  border-bottom: solid;
+  border-bottom-color: rgb(235, 235, 235);
+  border-bottom-width: 1px;
+}
+
+.app-view > #id-console-view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 200px;
+  color: #fff;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  border-left-style: solid;
+  border-left-color: rgb(221, 220, 220);
+  border-left-width: 0.5px;
+}
+
+.app-view > #id-console-view p {
+  line-height: 3.5vh;
+}
+
+.app-view > #id-console-view > .console-options {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 25px;
+  background: rgb(238, 238, 238);
+}
+
+.app-view > #id-console-view > .console-options > .wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.app-view > #id-console-view > .main-view {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(29, 29, 29);
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.log.info {
+  font-size: 12px;
+}
+
+.log.message {
+  color: rgb(41, 116, 255);
+}
+
+.log.success {
+  color: rgb(3, 124, 13);
+}
+
+.log.error {
+  color: rgb(236, 76, 76);
+}

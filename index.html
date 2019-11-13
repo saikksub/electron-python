@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <script type="text/javascript" src="./assets/scripts/index.js"></script>
+    <script type="text/javascript" src="./assets/scripts/commands/index.js"></script>
+    <script type="text/javascript" src="./assets/scripts/pm/index.js"></script>
+    <script type="text/javascript" src="./assets/scripts/controller/index.js"></script>
+  </head>
+  <body>
+    <div class="meta-view">
+      This demo using
+      <table>
+        <tr>
+          <th>Pacakge</th>
+          <th>Description</th>
+          <th>Version</th>
+        </tr>
+        <tr>
+          <td>node</td>
+          <td>JavaScript runtime environment</td>
+          <td><script>document.write(process.versions.node)</script></td>
+        </tr>
+        <tr>
+          <td>electron</td>
+          <td>open-source framework to create desktop applications</td>
+          <td><script>document.write(process.versions.electron)</script></td>
+        </tr>
+      </table>
+    </div> 
+    <div class="app-view">
+      <div class="script-selector-view">
+        <ul>
+          <li>
+            <button id="script-hello_world">hello world</button>
+          </li>
+          <li>
+            <button id="script-math_pow">Math.pow(a, b)</button>
+            <div style="padding: 10px; background: #eaeaea; margin-top: 5px;">
+              <div style="margin: 2px 0;">a: <input id="id-arg-input-math-pow-a" value="0"></div>
+              <div style="margin: 2px 0;">b: <input id="id-arg-input-math-pow-b" value="0"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="id-console-view">
+        <div class="console-options">
+          <div class="wrapper">
+            <button id="id-clear-console" style="height: 20px; margin: auto 0;">clear</button>
+          </div>
+        </div>
+        <div id="id-logger" class="main-view" />
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
