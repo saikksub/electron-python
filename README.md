@@ -7,4 +7,4 @@ The application does not install python as dependency. Expected a pre-installed 
 ## Instructions
 1. Clone or download the repository.
 2. From the project directory, to install dependencies, run `yarn`.
-3. To run the application `yarn dev`
+3. To run the application `yarn start`
