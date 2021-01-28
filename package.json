@@ -6,6 +6,6 @@
     "start": "./node_modules/.bin/electron ."
   },
   "devDependencies": {
-    "electron": "^7.1.1"
+    "electron": "^9.4.0"
   }
 }
